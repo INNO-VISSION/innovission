@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>InnoVision</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="InnoVision Logo">
+                <!-- <h2>Inno<span>Vission</span></h2> -->
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu" id="menu">
+                <img src="images/logo.png" alt="InnoVision Logo">
+                <ul class="nav-link">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="domains.html">Domains</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="about-content">
+            <h2>About <span>Us</span></h2>
+            <p><span>InnoVision:</span> Upskill Bharat – Empowering India’s Future
+                In an era where technology and innovation are transforming every aspect of life, Innovision: Upskill
+                Bharat is emerging as a platform dedicated to shaping the future of India by empowering its people
+                through upskilling. The initiative focuses on equipping individuals with essential skills, both
+                technical and non-technical, to thrive in the evolving digital economy.
+                Upskill Bharat, the subheading of this initiative, signifies a commitment to empowering the nation’s
+                workforce. By promoting skill development, Innovision not only aims to enhance employability but also
+                contribute to India’s overall economic growth and technological advancement.
+                InnoVision: Empowering India's Future, One Skill at a Time.</p>
+            <h6>Join us on our mission to make education a lifelong journey and empower individuals to achieve their
+                full
+                potential. Together, we can create a brighter future through the power of learning.
+            </h6>
+
+            <div class="lectures">
+                <div class="lecture-card">
+                    <img src="images/pramod-img.png" alt="Lecture 1" class="lecture-image">
+                    <div class="lecture-info">
+                        <h3> PRAMOD REDDY V</h3>
+                        <p>PYTHON DEVELOPER</p>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <img src="images/hemanth-img.jpg" alt="Lecture 2" class="lecture-image">
+                    <div class="lecture-info">
+                        <h3>HEMANTHKUMAR K S</h3>
+                        <p> PYTHON DEVELOPER</p>
+                    </div>
+                </div>
+                <!-- <div class="lecture-card">
+                    <img src="path/to/lecture3.jpg" alt="Lecture 3" class="lecture-image">
+                    <div class="lecture-info">
+                        <h3>Lecture Title 3</h3>
+                        <p>Brief description of Lecture 3.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <style>
+            #about{
+                margin-top: 120px;
+                opacity: 0;
+                transform: translateY(50px);
+                transition: opacity 0.7s, transform 0.7s;
+            }
+            #about.revealed {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+         <script>
+            // Function to check if an element is in the viewport
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return rect.top < window.innerHeight && rect.bottom > 0;
+            }
+
+            // Function to reveal the section
+            function revealOnScroll() {
+                const revealSection = document.querySelector('#about');
+                if (isInViewport(revealSection)) {
+                    revealSection.classList.add('revealed');
+                }
+            }
+
+            // Listen for scroll events
+            window.addEventListener('scroll', revealOnScroll);
+
+            // Initial check to ensure the animation is triggered if the section is already in view
+            revealOnScroll();
+
+
+        </script>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section-logo">
+                <img src="images/logo.png" alt="InnoVision Logo">
+            </div>
+            <div class="footer-section about">
+                <h3>About InnoVision</h3>
+                <p>InnoVision is dedicated to providing high-quality educational content and courses to learners
+                    worldwide. Join us in our mission to make learning accessible and engaging for everyone.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Domains</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@innovision.com</p>
+                <p>Phone: <br> +91 <br>+91</p>
+                <p>Address:InnoVision building , Kuppam, India</p>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Connect with Us</h3>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 InnoVision. All rights reserved.</p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+   
+        
+    </body>

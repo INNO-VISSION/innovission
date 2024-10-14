@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>InnoVision</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="InnoVision Logo">
+                <!-- <h2>Inno<span>Vission</span></h2> -->
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu" id="menu">
+                <img src="images/logo.png" alt="InnoVision Logo">
+                <ul class="nav-link">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="domains.html">Domains</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="contact">
+        <div class="contact-content">
+            <h2>Contact <span>Us</span></h2>
+            <p>Have a question or feedback? Feel free to reach out to us. We'd love to hear from you!</p>
+            <form action="app.py" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            
+        </div>
+        <style>
+            #contact {
+               margin-top: 120px;
+            }
+            
+        </style>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section-logo">
+                <img src="images/logo.png" alt="InnoVision Logo">
+            </div>
+            <div class="footer-section about">
+                <h3>About InnoVision</h3>
+                <p>InnoVision is dedicated to providing high-quality educational content and courses to learners
+                    worldwide. Join us in our mission to make learning accessible and engaging for everyone.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Domains</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@innovision.com</p>
+                <p>Phone: <br> +91 <br>+91</p>
+                <p>Address:InnoVision building , Kuppam, India</p>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Connect with Us</h3>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 InnoVision. All rights reserved.</p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+   
+        
+    </body>

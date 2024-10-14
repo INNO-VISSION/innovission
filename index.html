@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>InnoVision</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="InnoVision Logo">
+                <!-- <h2>Inno<span>Vission</span></h2> -->
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu" id="menu">
+                <img src="images/logo.png" alt="InnoVision Logo">
+                <ul class="nav-link">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="domains.html">Domains</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="home-content">
+            <!-- <video src="images/home-video.mp4" alt="InnoVision Image" class="home-video"> -->
+            <video autoplay muted loop src="videos/home-videos.mp4" class="home-video"></video>
+            <div class="home-text">
+                <h1>What Is <span>InnoVision</span></h1>
+                <p>InnoVision provides all educational related content and courses through online platforms. Our mission
+                    is to make learning accessible and engaging for everyone, everywhere.</p>
+            </div>
+        </div>
+        <a href="#">Learn More</a>
+        <script>
+            // Function to check if an element is in the viewport
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return rect.top < window.innerHeight && rect.bottom > 0;
+            }
+
+            // Function to reveal the section
+            function revealOnScroll() {
+                const revealSection = document.querySelector('#home');
+                if (isInViewport(revealSection)) {
+                    revealSection.classList.add('revealed');
+                }
+            }
+
+            // Listen for scroll events
+            window.addEventListener('scroll', revealOnScroll);
+
+            // Initial check to ensure the animation is triggered if the section is already in view
+            revealOnScroll();
+
+
+        </script>
+    </section>
+    <section id="about">
+        <div class="about-content">
+            <h2>About <span>Us</span></h2>
+            <p><span>InnoVision:</span> Upskill Bharat – Empowering India’s Future
+                In an era where technology and innovation are transforming every aspect of life, Innovision: Upskill
+                Bharat is emerging as a platform dedicated to shaping the future of India by empowering its people
+                through upskilling. The initiative focuses on equipping individuals with essential skills, both
+                technical and non-technical, to thrive in the evolving digital economy.
+                Upskill Bharat, the subheading of this initiative, signifies a commitment to empowering the nation’s
+                workforce. By promoting skill development, Innovision not only aims to enhance employability but also
+                contribute to India’s overall economic growth and technological advancement.
+                InnoVision: Empowering India's Future, One Skill at a Time.</p>
+            <h6>Join us on our mission to make education a lifelong journey and empower individuals to achieve their
+                full
+                potential. Together, we can create a brighter future through the power of learning.
+            </h6>
+
+            <div class="lectures">
+                <div class="lecture-card">
+                    <img src="images/pramod-img.png" alt="Lecture 1" class="lecture-image">
+                    <div class="lecture-info">
+                        <h3> PRAMOD REDDY V</h3>
+                        <p>PYTHON DEVELOPER</p>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <img src="images/hemanth-img.jpg" alt="Lecture 2" class="lecture-image">
+                    <div class="lecture-info">
+                        <h3>HEMANTHKUMAR K S</h3>
+                        <p> PYTHON DEVELOPER</p>
+                    </div>
+                </div>
+                <!-- <div class="lecture-card">
+                    <img src="path/to/lecture3.jpg" alt="Lecture 3" class="lecture-image">
+                    <div class="lecture-info">
+                        <h3>Lecture Title 3</h3>
+                        <p>Brief description of Lecture 3.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section id="domains" class="domains">
+        <div class="domains-content">
+            <h2><span>Our</span> Domains</h2>
+            <p>Explore our wide range of technical courses designed to help you upskill and stay ahead in the industry.
+            </p>
+            <div class="courses">
+                <div class="course-card">
+                    <div class="course-info">
+
+                        <h3>Web Development Course</h3>
+
+                        <p>Learn the fundamentals of web development, including HTML, CSS, and JavaScript.</p>
+
+                        <a href="#" class="get-courses-btn">Get Courses</a>
+
+                    </div>
+
+
+                </div>
+
+                <div class="course-card">
+                    <div class="course-info">
+
+                        <h3>Data Science Course</h3>
+
+                        <p>Learn the essentials of data science, including data analysis, visualization, and machine
+                            learning.</p>
+
+                        <a href="#" class="get-courses-btn">Get Courses</a>
+
+                    </div>
+
+
+                </div>
+
+                <div class="course-card">
+                    <div class="course-info">
+
+                        <h3>Machine Learning Course</h3>
+
+                        <p>Master the fundamentals of machine learning, including algorithms, data processing, and model
+                            evaluation.</p>
+
+                        <a href="#" class="get-courses-btn">Get Courses</a>
+
+                    </div>
+
+
+                </div>
+                <div class="course-card">
+                    <div class="course-info">
+                        <h3>AI Course</h3>
+                        <p>Delve into the world of artificial intelligence, covering topics such as neural networks,
+                            natural
+                            language processing, and computer vision.</p>
+                        <a href="#" class="get-courses-btn">Get Courses</a>
+                    </div>
+                </div>
+                <!-- <div class="course-card">
+                    <div class="course-info">
+                        <h3>Cloud Computing Course</h3>
+                        <p>Explore the essentials of cloud computing, including cloud services, deployment models, and
+                            security
+                            considerations.</p>
+                        <a href="#" class="get-courses-btn">Get Courses</a>
+                    </div>
+
+                </div>
+                <div class="course-card">
+                    <div class="course-info">
+                        <h3>Blockchain Course</h3>
+                        <p>Discover the world of blockchain technology, covering topics such as cryptocurrencies, smart
+                            contracts, and decentralized applications.</p>
+                        <a href="#" class="get-courses-btn">Get Courses</a>
+                    </div>
+                </div> -->
+
+            </div>
+            <a href="domains.html" class="explore-more">Explore More</a>
+
+    </section>
+    <section id="blog" class="blog">
+        <div class="domains-content">
+            <h2>Our <span>Blog</span></h2>
+            <p>Stay updated with the latest trends, tips, and insights from the world of technology and education.</p>
+            <div class="courses">
+                <div class="course-card">
+                    <img src="path/to/blog1.jpg" alt="Blog 1" class="blog-image">
+                    <div class="blog-info">
+                        <h3>Blog Title 1</h3>
+                        <p>Brief description of Blog 1. This blog covers the latest trends in web development.</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="path/to/blog2.jpg" alt="Blog 2" class="blog-image">
+                    <div class="blog-info">
+                        <h3>Blog Title 2</h3>
+                        <p>Brief description of Blog 2. This blog discusses the importance of data science in modern
+                            industries.</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="path/to/blog3.jpg" alt="Blog 3" class="blog-image">
+                    <div class="blog-info">
+                        <h3>Blog Title 3</h3>
+                        <p>Brief description of Blog 3. This blog explores the advancements in artificial intelligence.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <a href="blog.html" class="explore-more">Explore More Blogs</a>
+        <script>
+            // Function to check if an element is in the viewport
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top < window.innerHeight &&
+                    rect.bottom >= 0
+                );
+            }
+
+            function revealOnScroll() {
+                const domainsSection = document.querySelector('#domains');
+                if (isInViewport(domainsSection)) {
+                    domainsSection.classList.add('revealed');
+                }
+            }
+            window.addEventListener('scroll', revealOnScroll);
+
+            revealOnScroll();
+
+        </script>
+    </section>
+    <section id="contact">
+        <div class="contact-content">
+            <h2>Contact <span>Us</span></h2>
+            <p>Have a question or feedback? Feel free to reach out to us. We'd love to hear from you!</p>
+            <form action="app.py" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section-logo">
+                <img src="images/logo.png" alt="InnoVision Logo">
+            </div>
+            <div class="footer-section about">
+                <h3>About InnoVision</h3>
+                <p>InnoVision is dedicated to providing high-quality educational content and courses to learners
+                    worldwide. Join us in our mission to make learning accessible and engaging for everyone.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Domains</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@innovision.com</p>
+                <p>Phone: <br> +91 <br>+91</p>
+                <p>Address:InnoVision building , Kuppam, India</p>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Connect with Us</h3>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 InnoVision. All rights reserved.</p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
